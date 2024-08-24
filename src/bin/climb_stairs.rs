@@ -28,3 +28,21 @@ fn main() {
 
     println!("There are {:?} ways to climb {input} stairs", result);
 }
+
+
+// Tests
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_climb_stairs_1() {
+        assert_eq!(Solution::climb_stairs(1), 1);
+    }
+    
+    #[test]
+    fn test_climb_stairs_2() {
+        assert_eq!(Solution::climb_stairs(4), 5);
+    }
+}

@@ -15,6 +15,13 @@ impl Solution {
         }
         vec![]
     }
+
+    pub fn functional_two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        use std::collections::HashMap;
+
+        let find = nums.iter().enumerate()
+            .fold(|(HashMap::new(), None)| (mut map, res))
+    }
 }
 
 #[cfg(test)]
